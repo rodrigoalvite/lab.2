@@ -18,11 +18,12 @@ public class Cuenta {
     }
 
 
+    //obtiene valor el get (protege los datos)
     public String getNombreCliente() {
         return nombreCliente;
     }
 
-
+//el set modifica los valores (protege los datos)
     public void setNombreCliente(String nombreCliente) {
         this.nombreCliente = nombreCliente;
     }
@@ -57,6 +58,7 @@ public class Cuenta {
         this.saldo = saldo;
     }
 
+    //Permite depositar dinero 
     public boolean ingreso(Double cantidad){
         if(cantidad>0){
             this.saldo += cantidad;
